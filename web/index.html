@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DesarrolloWebDocker</title>
+</head>
+<style>
+    #full{
+        position: fixed;
+        top:0px;
+        left:0px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border: solid #000 3px;
+        border-radius: 4vh;
+        background-color: #fff;
+        padding: 3%;
+        -webkit-box-shadow: 0px 0px 6vh 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 6vh 0px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 6vh 0px rgba(0,0,0,0.75);
+    }
+    #content img{
+        height: 10vh;
+    }
+    #content a{
+        text-decoration: none;
+        color: #687d00;
+        background-color: #fff;
+        padding: 1% 2%;
+        margin: 1%;
+        border: solid 2px #687d00;
+        transition: 0.2s;
+        border-radius: 10%;
+        font-size: 4vh;
+    }
+    #content a:hover{
+        color: #fff;
+        background-color: #c0e800;
+        font-size: 4.3vh;
+    }
+</style>
+<body>
+    <div id="full">
+        <div id="content">
+            <div>
+                
+            </div>
+            <img src="ALHUBOLogo.png"/>
+            <a href="php.php">PHP</a>
+            <a href="sql.php">SQL Test</a>
+            <a href="http://localhost:8080/">phpMyAdmin</a>
+        </div>
+    </div>
+</body>
+</html>
