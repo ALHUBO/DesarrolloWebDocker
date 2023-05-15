@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuración</title>
+    <style>
+        body{
+            padding: 5%;
+        }
+        .title{
+            font-size: 9vh;
+            border-bottom: solid #e3e3e3 2px;
+            margin-bottom: 6vh;
+        }
+        .SubTitle{
+            font-size: 5vh;
+            border-bottom: solid #e3e3e3 2px;
+            margin-bottom: 4vh;
+        }
+        .tema{
+            font-size:3vh;
+            margin-bottom: 4vh;
+        }
+        .img{
+            display: flex;
+            justify-content: center;
+            margin: 3vh 0vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">DesarrolloWebDocker</div>
+    <div class="SubTitle">¿Que es? 😏</div>
+    <div class="tema">
+        💻DesarrolloWebDocker es un repositorio que tiene lo más básico 💿 para empezar con el desarrollo web 📈. 📟 No hay necesidad de configurar nada para empezar a programar 😁.
+    	<div>Tambien es posible modificar algunas cosas para hacerlo más personal 🔧.</div>
+    </div>
+    <div class="SubTitle">Default 😒</div>
+    <div class="tema">
+        Por defualt la base de datos se llamará: [ db_name ].
+        <p>Contraseña root: [ !P4s5w0rd_Ro0t ]</p>
+        <div>Nombre de usuario: [ user_name ]</div>
+        <div>contraseña: [ !P4s5w0rd ]</div>
+    </div>
+    <div class="title">Personalizar📝</div>
+    <div class="SubTitle">📋 Pagina Web 📁</div>
+    <div class="tema">
+        Todo el contenido del sitio web tiene que estar dentro del directorio web.
+        <div class="img">
+            <img src="./img/web.1.png"/>
+        </div>
+        🔥 Inicialmente se tiene un sitio de prueba para verificar que todo lo instalado por docker compose funcione correctamente. 😏 Estos archivos deberan ser sustituidos por tu propio sitio web💾.
+    </div>
+    <div class="SubTitle">Base de datos inicial📑</div>
+    <div class="tema">
+        Si se desea tener una base de datos inicial o cargar una ya existente. Solo basta con ingresar el archivo .sql en la carpeta sql y docker compose se encargará automáticamente de configurar todo.
+        <div class="img">
+            <img src="./img/dbInit.1.png"/>
+        </div>
+        En este caso el Archivo DataBase.sql es el que se cargará por default. Actualmente solo crea una base de datos con el nombre [ db_name ]
+        <div class="img">
+            <img src="./img/dbInit.2.png"/>
+        </div>
+        Si se desea tener la base de datos vacía puede solo cambiar el nombre default por alguno personalizado.
+    </div>
+    <div class="SubTitle">Usuarios de la base de datos 👥</div>
+    <div class="tema">
+        Para cambiar los valores por default de la base de datos abre el archivo compose y edita:
+        <p></p>
+        <div>Contraseña root:</div>
+        Cambia [ !P4s5w0rd_Ro0t ] por tu contraseña.
+        <div class="img">
+            <img src="./img/dbU.1.png"/>
+        </div>
+        <div class="img">
+            <img src="./img/dbU.2.png"/>
+        </div>
+        
+
+        <p></p>
+        <div>Usuario:</div>
+        Cambia [ user_name ] por tu nombre de usuario personal.
+        <div>Cambia [ !P4s5w0rd ] por tu contraseña de usuario personal.</div>
+        <div class="img">
+            <img src="./img/dbU.3.png"/>
+        </div>
+        <div class="img">
+            <img src="./img/dbU.4.png"/>
+        </div>
+        
+    </div>
+    <div class="SubTitle">Docker Compose 🔐</div>
+    <div class="tema">
+        Puedes editar libremente el archivo [ docker-compose.yml ] para cambiar el nombre de los directioios o agregar nueva configuracion.
+        <p>Si no le sabe no le mueva 😗.</p>
+    </div>
+    <div class="title">Posibles Errores 💀 y su Solución 🤓</div>
+    <div class="SubTitle">No se pudo iniciar un servicio 🤕</div>
+    <div class="tema">
+        Normalmente esto ocurre porque ya existe otro servicio corriendo por el puerto especificado en docker compose.
+        <p></p>
+        <div>La posible solución es cambiar el puerto del host.</div>
+        En el archivo docker compose busca la sección de port y edita el numero que esta antes de los dos puntos :
+        <div class="img">
+            <img src="./img/error.1.png"/>
+        </div>
+        <div>Elige un numero entre el 49,152 y 100,000</div>
+    </div>
+    <div class="title">ALHUBO 😁</div>
+    <div class="SubTitle">¿Quien soy? 😋</div>
+    <div class="tema">
+        Mi nombre es Alejandro Huerta Bolaños. Hice este repositorio para facilitar el inicio al desarrollo web.
+    </div>
+</body>
+</html>

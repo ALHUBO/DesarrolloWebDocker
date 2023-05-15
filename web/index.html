@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,7 +29,19 @@
         -webkit-box-shadow: 0px 0px 6vh 0px rgba(0,0,0,0.75);
         -moz-box-shadow: 0px 0px 6vh 0px rgba(0,0,0,0.75);
         box-shadow: 0px 0px 6vh 0px rgba(0,0,0,0.75);
+        max-width: 20%;
     }
+    #content div:nth-child(1){
+        font-size: 4vh;
+        font-weight: 900;
+        padding-bottom: 3vh;
+    }
+    #content div:nth-child(2){
+        font-size: 2.5vh;
+        font-weight: 500;
+        padding-bottom: 3vh;
+    }
+    
     #content img{
         height: 10vh;
     }
@@ -49,18 +61,30 @@
         background-color: #c0e800;
         font-size: 4.3vh;
     }
+    #fecha{
+        padding-top: 4vh;
+        text-align: center;
+    }
 </style>
 <body>
     <div id="full">
         <div id="content">
+            <div>DesarrolloWebDocker</div>
             <div>
-                
+                Esta pagina inicial es solo una prueba de que funciona docker.
             </div>
             <img src="ALHUBOLogo.png"/>
             <a href="php.php">PHP</a>
             <a href="sql.php">SQL Test</a>
             <a href="http://localhost:8080/">phpMyAdmin</a>
+            <a href="conf.html">Configuración</a>
+            <div id="fecha"></div>
         </div>
     </div>
 </body>
+<script>
+    var f=document.querySelector("#fecha");
+    var date=new Date();
+    f.innerHTML='ALHUBO &copy; '+date.getFullYear()+'<p>V 1.0.0</p>';
+</script>
 </html>
